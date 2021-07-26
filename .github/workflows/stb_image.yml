@@ -67,7 +67,7 @@ jobs:
 
     - name: "Write version to disk"
       shell: bash
-      run: echo "$(./.github/scripts/version_stb_image.sh)-$GITVERSION_NUGETPRERELEASETAGV2" >> version.txt
+      run: echo "$(./.github/scripts/version_stb_image.ps1)-$GITVERSION_NUGETPRERELEASETAGV2" >> version.txt
 
     - name: "Upload version artifact"
       uses: actions/upload-artifact@v2
