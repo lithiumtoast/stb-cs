@@ -98,7 +98,7 @@ jobs:
       run: ./library.sh
 
     - name: "Build native libraries (Windows)"
-       if: startsWith(matrix.platform.rid, 'win') == 'false'
+      if: startsWith(matrix.platform.rid, 'win') != 'true'
       shell: pwsh
       run: .\library.cmd
 
