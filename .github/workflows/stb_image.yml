@@ -1,4 +1,4 @@
-name: "Build test pack deploy"
+name: "Pack"
 
 env:
   DOTNET_CLI_TELEMETRY_OPTOUT: 1
