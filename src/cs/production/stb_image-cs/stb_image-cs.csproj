@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <!-- MSBuild settings -->
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <!-- RuntimeIdentifier -->
+    <PropertyGroup>
+        <EnableDefaultRuntimeIdentifier>true</EnableDefaultRuntimeIdentifier>
+    </PropertyGroup>
+    
+    <!-- NuGet -->
+    <PropertyGroup>
+        <IsPackable>true</IsPackable>
+        <RepositoryUrl>https://github.com/lithiumtoast/stb-cs</RepositoryUrl>
+        <PackageDescription>Automatically updated C# bindings for stb with native dynamic link libraries.</PackageDescription>
+        <NoWarn>NU5101</NoWarn>
+        <PackageId Condition="'$(RuntimeIdentifier)' != ''">SDL.$(RuntimeIdentifier)</PackageId>
+    </PropertyGroup>
+
+    <!-- NuGet package references -->
+    <ItemGroup>
+      <PackageReference Include="C2CS.Runtime" Version="*-*" />
+    </ItemGroup>
+
+    <!-- Bindings for Windows -->
+    <ItemGroup Condition="'$(IsWindows)' == 'true'">
+        <Compile Update="SDL.win.cs" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(IsWindows)' != 'true'">
+        <Compile Remove="SDL.win.cs" />
+    </ItemGroup>
+
+    <!-- Bindings for macOS -->
+    <ItemGroup Condition="'$(IsMacOS)' == 'true'">
+        <Compile Update="SDL.osx.cs" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(IsMacOS)' != 'true'">
+        <Compile Remove="SDL.osx.cs" />
+    </ItemGroup>
+    
+    <!-- Bindings for Linux -->
+    <ItemGroup Condition="'$(IsLinux)' == 'true'">
+        <Compile Update="SDL.linux.cs" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(IsLinux)' != 'true'">
+        <Compile Remove="SDL.linux.cs" />
+    </ItemGroup>
+
+    <!-- Dynamic link libraries -->
+    <ItemGroup>
+        <Content Include="$(GitRepositoryPath)lib/*.dll" Condition="'$(IsWindows)' == 'true'">
+            <Link>%(Filename)%(Extension)</Link>
+            <PackagePath>runtimes\$(RuntimeIdentifier)\native\%(Filename)%(Extension)</PackagePath>
+            <Pack>true</Pack>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="$(GitRepositoryPath)lib/*.dylib" Condition="'$(IsMacOS)' == 'true'">
+            <Link>%(Filename)%(Extension)</Link>
+            <PackagePath>runtimes/$(RuntimeIdentifier)/native/%(Filename)%(Extension)</PackagePath>
+            <Pack>true</Pack>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="$(GitRepositoryPath)lib/*.so" Condition="'$(IsLinux)' == 'true'">
+            <Link>%(Filename)%(Extension)</Link>
+            <PackagePath>runtimes/$(RuntimeIdentifier)/native/%(Filename)%(Extension)</PackagePath>
+            <Pack>true</Pack>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    <Target Name="Print native libraries" BeforeTargets="BeforeBuild">
+        <Exec Command="ls $(GitRepositoryPath)lib" Condition="'$(OS)' != 'Windows_NT'"  />
+        <Exec Command="dir $(GitRepositoryPath)lib" Condition="'$(OS)' == 'Windows_NT'"  />
+    </Target>
+
+</Project>
