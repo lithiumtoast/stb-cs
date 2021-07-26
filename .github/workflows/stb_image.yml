@@ -93,12 +93,12 @@ jobs:
 
     - name: "Windows"
       if: ${{ startsWith(matrix.platform.rid, 'win') }}
-      shell: bash
+      shell: pwsh
       run: .\library.cmd
 
     - name: "Unix"
       if: ${{ !startsWith(matrix.platform.rid, 'win') }}
-      shell: pwsh
+      shell: bash
       run: ./library.sh
 
     - name: "Upload"
