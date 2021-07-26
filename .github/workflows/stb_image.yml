@@ -66,8 +66,7 @@ jobs:
       uses: gittools/actions/gitversion/execute@v0.9.6
 
     - name: "Write version to disk"
-      shell: bash
-      run: echo "$(./.github/scripts/version_stb_image.ps1)-$GITVERSION_NUGETPRERELEASETAGV2" >> version.txt
+      run: echo "$(./.github/scripts/version_stb_image.ps1)-${{ env.GitVersion_CommitsSinceVersionSource }}" >> version.txt
 
     - name: "Upload version artifact"
       uses: actions/upload-artifact@v2
