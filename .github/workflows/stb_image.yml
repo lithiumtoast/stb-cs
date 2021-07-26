@@ -9,8 +9,9 @@ env:
   MYGET_SOURCE_URL: 'https://www.myget.org/F/lithiumtoast/api/v3/index.json'
 
 on:
-  repository_dispatch:
-    types: [build-test-pack-deploy]
+  push:
+    branches: [develop]
+    paths-ignore: ['**/*.md']
 
 jobs:
 
@@ -42,7 +43,7 @@ jobs:
   version-job:
     name: "Get repository version"
     needs: [bindgen-job]
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: "Clone Git repository"
@@ -64,6 +65,7 @@ jobs:
       uses: gittools/actions/gitversion/execute@v0.9.6
 
     - name: "Write version to disk"
+      shell: bash
       run: echo "$(./.github/scripts/version_stb_image.sh)-$GITVERSION_NUGETPRERELEASETAGV2" >> version.txt
 
     - name: "Upload version artifact"
