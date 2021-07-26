@@ -165,7 +165,7 @@ jobs:
         ls -a ${{ github.workspace }}/lib
 
     - name: "Pack .NET project"
-      run: dotnet pack '${{ env.DOTNET_PROJECT_PATH }}' --nologo --output "./nuget-packages-packed" --verbosity minimal --configuration Release --no-build -p:PackageVersion='${{ env.VERSION }}'
+      run: dotnet pack '${{ env.DOTNET_PROJECT_PATH }}' --nologo --output "./nuget-packages-packed" --verbosity minimal --configuration Release -p:PackageVersion='${{ env.VERSION }}'
 
     - name: "Upload NuGet packages: MyGet"
       if: matrix.os != 'windows-latest'
