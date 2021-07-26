@@ -1,0 +1,1731 @@
+{
+  "fileName": "/Users/lstranks/Programming/stb-cs/src/c/stb_image/main.h",
+  "bitness": 64,
+  "functions": [
+    {
+      "name": "stbi_zlib_decode_noheader_buffer",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "obuffer",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 532,
+            "column": 54
+          }
+        },
+        {
+          "name": "olen",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 532,
+            "column": 67,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "ibuffer",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 532,
+            "column": 85
+          }
+        },
+        {
+          "name": "ilen",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 532,
+            "column": 98,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 532,
+        "column": 15
+      }
+    },
+    {
+      "name": "stbi_zlib_decode_noheader_malloc",
+      "returnType": "char*",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 531,
+            "column": 60
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 531,
+            "column": 72,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "outlen",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 531,
+            "column": 82
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 531,
+        "column": 15
+      }
+    },
+    {
+      "name": "stbi_zlib_decode_buffer",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "obuffer",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 529,
+            "column": 45
+          }
+        },
+        {
+          "name": "olen",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 529,
+            "column": 58,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "ibuffer",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 529,
+            "column": 76
+          }
+        },
+        {
+          "name": "ilen",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 529,
+            "column": 89,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 529,
+        "column": 15
+      }
+    },
+    {
+      "name": "stbi_zlib_decode_malloc",
+      "returnType": "char*",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 528,
+            "column": 51
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 528,
+            "column": 63,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "outlen",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 528,
+            "column": 73
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 528,
+        "column": 15
+      }
+    },
+    {
+      "name": "stbi_zlib_decode_malloc_guesssize_headerflag",
+      "returnType": "char*",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 527,
+            "column": 72
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 527,
+            "column": 84,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "initial_size",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 527,
+            "column": 93,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "outlen",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 527,
+            "column": 112
+          }
+        },
+        {
+          "name": "parse_header",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 527,
+            "column": 124,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 527,
+        "column": 15
+      }
+    },
+    {
+      "name": "stbi_zlib_decode_malloc_guesssize",
+      "returnType": "char*",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 526,
+            "column": 61
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 526,
+            "column": 73,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "initial_size",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 526,
+            "column": 82,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "outlen",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 526,
+            "column": 101
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 526,
+        "column": 15
+      }
+    },
+    {
+      "name": "stbi_set_flip_vertically_on_load_thread",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "flag_true_if_should_flip",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 522,
+            "column": 58,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 522,
+        "column": 14
+      }
+    },
+    {
+      "name": "stbi_convert_iphone_png_to_rgb_thread",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "flag_true_if_should_convert",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 521,
+            "column": 56,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 521,
+        "column": 14
+      }
+    },
+    {
+      "name": "stbi_set_unpremultiply_on_load_thread",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "flag_true_if_should_unpremultiply",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 520,
+            "column": 56,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 520,
+        "column": 14
+      }
+    },
+    {
+      "name": "stbi_set_flip_vertically_on_load",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "flag_true_if_should_flip",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 515,
+            "column": 51,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 515,
+        "column": 14
+      }
+    },
+    {
+      "name": "stbi_convert_iphone_png_to_rgb",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "flag_true_if_should_convert",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 512,
+            "column": 49,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 512,
+        "column": 14
+      }
+    },
+    {
+      "name": "stbi_set_unpremultiply_on_load",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "flag_true_if_should_unpremultiply",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 508,
+            "column": 49,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 508,
+        "column": 14
+      }
+    },
+    {
+      "name": "stbi_is_16_bit_from_callbacks",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "clbk",
+          "type": "stbi_io_callbacks*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 413,
+            "column": 3
+          }
+        },
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 494,
+            "column": 85
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 494,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_is_16_bit_from_memory",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "stbi_uc*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 384,
+            "column": 23
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 493,
+            "column": 72,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 493,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_info_from_callbacks",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "clbk",
+          "type": "stbi_io_callbacks*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 413,
+            "column": 3
+          }
+        },
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 492,
+            "column": 80
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 492,
+            "column": 91
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 492,
+            "column": 99
+          }
+        },
+        {
+          "name": "comp",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 492,
+            "column": 107
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 492,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_info_from_memory",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "stbi_uc*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 384,
+            "column": 23
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 491,
+            "column": 67,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 491,
+            "column": 77
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 491,
+            "column": 85
+          }
+        },
+        {
+          "name": "comp",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 491,
+            "column": 93
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 491,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_image_free",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "retval_from_stbi_load",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 488,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 488,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_failure_reason",
+      "returnType": "char*",
+      "parameters": [],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 485,
+        "column": 21
+      }
+    },
+    {
+      "name": "stbi_is_hdr_from_memory",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "stbi_uc*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 384,
+            "column": 23
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 476,
+            "column": 67,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 476,
+        "column": 16
+      }
+    },
+    {
+      "name": "stbi_is_hdr_from_callbacks",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "clbk",
+          "type": "stbi_io_callbacks*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 413,
+            "column": 3
+          }
+        },
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 475,
+            "column": 80
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 475,
+        "column": 16
+      }
+    },
+    {
+      "name": "stbi_ldr_to_hdr_scale",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "scale",
+          "type": "float",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 471,
+            "column": 47,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 471,
+        "column": 19
+      }
+    },
+    {
+      "name": "stbi_ldr_to_hdr_gamma",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "gamma",
+          "type": "float",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 470,
+            "column": 47,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 470,
+        "column": 19
+      }
+    },
+    {
+      "name": "stbi_hdr_to_ldr_scale",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "scale",
+          "type": "float",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 466,
+            "column": 47,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 466,
+        "column": 19
+      }
+    },
+    {
+      "name": "stbi_hdr_to_ldr_gamma",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "gamma",
+          "type": "float",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 465,
+            "column": 47,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 465,
+        "column": 19
+      }
+    },
+    {
+      "name": "stbi_loadf_from_callbacks",
+      "returnType": "float*",
+      "parameters": [
+        {
+          "name": "clbk",
+          "type": "stbi_io_callbacks*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 413,
+            "column": 3
+          }
+        },
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 456,
+            "column": 84
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 456,
+            "column": 95
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 456,
+            "column": 103
+          }
+        },
+        {
+          "name": "channels_in_file",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 456,
+            "column": 112
+          }
+        },
+        {
+          "name": "desired_channels",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 456,
+            "column": 134,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 456,
+        "column": 19
+      }
+    },
+    {
+      "name": "stbi_loadf_from_memory",
+      "returnType": "float*",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "stbi_uc*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 384,
+            "column": 23
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 455,
+            "column": 74,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 455,
+            "column": 84
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 455,
+            "column": 92
+          }
+        },
+        {
+          "name": "channels_in_file",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 455,
+            "column": 100
+          }
+        },
+        {
+          "name": "desired_channels",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 455,
+            "column": 122,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 455,
+        "column": 19
+      }
+    },
+    {
+      "name": "stbi_load_16_from_callbacks",
+      "returnType": "stbi_us*",
+      "parameters": [
+        {
+          "name": "clbk",
+          "type": "stbi_io_callbacks*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 413,
+            "column": 3
+          }
+        },
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 443,
+            "column": 83
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 443,
+            "column": 94
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 443,
+            "column": 102
+          }
+        },
+        {
+          "name": "channels_in_file",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 443,
+            "column": 110
+          }
+        },
+        {
+          "name": "desired_channels",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 443,
+            "column": 132,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 443,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_load_16_from_memory",
+      "returnType": "stbi_us*",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "stbi_uc*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 384,
+            "column": 23
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 442,
+            "column": 73,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 442,
+            "column": 83
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 442,
+            "column": 91
+          }
+        },
+        {
+          "name": "channels_in_file",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 442,
+            "column": 99
+          }
+        },
+        {
+          "name": "desired_channels",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 442,
+            "column": 121,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 442,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_load_gif_from_memory",
+      "returnType": "stbi_uc*",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "stbi_uc*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 384,
+            "column": 23
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 430,
+            "column": 71,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "delays",
+          "type": "int**",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 430,
+            "column": 82
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 430,
+            "column": 95
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 430,
+            "column": 103
+          }
+        },
+        {
+          "name": "z",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 430,
+            "column": 111
+          }
+        },
+        {
+          "name": "comp",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 430,
+            "column": 119
+          }
+        },
+        {
+          "name": "req_comp",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 430,
+            "column": 129,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 430,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_load_from_callbacks",
+      "returnType": "stbi_uc*",
+      "parameters": [
+        {
+          "name": "clbk",
+          "type": "stbi_io_callbacks*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 413,
+            "column": 3
+          }
+        },
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 421,
+            "column": 82
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 421,
+            "column": 93
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 421,
+            "column": 101
+          }
+        },
+        {
+          "name": "channels_in_file",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 421,
+            "column": 109
+          }
+        },
+        {
+          "name": "desired_channels",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 421,
+            "column": 131,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 421,
+        "column": 18
+      }
+    },
+    {
+      "name": "stbi_load_from_memory",
+      "returnType": "stbi_uc*",
+      "parameters": [
+        {
+          "name": "buffer",
+          "type": "stbi_uc*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 384,
+            "column": 23
+          }
+        },
+        {
+          "name": "len",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 420,
+            "column": 80,
+            "isBuiltin": true
+          }
+        },
+        {
+          "name": "x",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 420,
+            "column": 93
+          }
+        },
+        {
+          "name": "y",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 420,
+            "column": 101
+          }
+        },
+        {
+          "name": "channels_in_file",
+          "type": "int*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 420,
+            "column": 109
+          }
+        },
+        {
+          "name": "desired_channels",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 420,
+            "column": 131,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 420,
+        "column": 18
+      }
+    }
+  ],
+  "functionPointers": [
+    {
+      "name": "",
+      "type": "int (void *)",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 412,
+            "column": 29
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 412,
+        "column": 15
+      }
+    },
+    {
+      "name": "",
+      "type": "void (void *, int)",
+      "returnType": "void",
+      "parameters": [
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 411,
+            "column": 29
+          }
+        },
+        {
+          "name": "n",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 411,
+            "column": 38,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 411,
+        "column": 15
+      }
+    },
+    {
+      "name": "",
+      "type": "int (void *, char *, int)",
+      "returnType": "int",
+      "parameters": [
+        {
+          "name": "user",
+          "type": "void*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 410,
+            "column": 29
+          }
+        },
+        {
+          "name": "data",
+          "type": "char*",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 410,
+            "column": 40
+          }
+        },
+        {
+          "name": "size",
+          "type": "int",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 410,
+            "column": 49,
+            "isBuiltin": true
+          }
+        }
+      ],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 410,
+        "column": 15
+      }
+    }
+  ],
+  "records": [
+    {
+      "type": "stbi_io_callbacks",
+      "fields": [
+        {
+          "name": "read",
+          "type": "int (void *, char *, int)",
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 410,
+            "column": 15
+          }
+        },
+        {
+          "name": "skip",
+          "type": "void (void *, int)",
+          "offset": 8,
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 411,
+            "column": 15
+          }
+        },
+        {
+          "name": "eof",
+          "type": "int (void *)",
+          "offset": 16,
+          "location": {
+            "fileName": "stb_image.h",
+            "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+            "line": 412,
+            "column": 15
+          }
+        }
+      ],
+      "nestedRecords": [],
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 413,
+        "column": 3
+      }
+    }
+  ],
+  "enums": [],
+  "opaqueTypes": [],
+  "typedefs": [
+    {
+      "name": "stbi_uc",
+      "underlyingType": "unsigned char",
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 384,
+        "column": 23
+      }
+    },
+    {
+      "name": "stbi_us",
+      "underlyingType": "unsigned short",
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 385,
+        "column": 24
+      }
+    }
+  ],
+  "variables": [],
+  "types": [
+    {
+      "name": "int",
+      "kind": "primitive",
+      "sizeOf": 4,
+      "alignOf": 4,
+      "isSystem": true
+    },
+    {
+      "name": "char*",
+      "kind": "pointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "isSystem": true
+    },
+    {
+      "name": "char",
+      "kind": "primitive",
+      "sizeOf": 1,
+      "alignOf": 1,
+      "isSystem": true
+    },
+    {
+      "name": "int*",
+      "kind": "pointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "isSystem": true
+    },
+    {
+      "name": "void",
+      "kind": "primitive",
+      "isSystem": true
+    },
+    {
+      "name": "stbi_io_callbacks*",
+      "kind": "pointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 413,
+        "column": 3
+      }
+    },
+    {
+      "name": "stbi_io_callbacks",
+      "kind": "typedef",
+      "sizeOf": 24,
+      "alignOf": 8,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 413,
+        "column": 3
+      }
+    },
+    {
+      "name": "void*",
+      "kind": "pointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "isSystem": true
+    },
+    {
+      "name": "int (void *, char *, int)",
+      "kind": "functionPointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 410,
+        "column": 15
+      }
+    },
+    {
+      "name": "void (void *, int)",
+      "kind": "functionPointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 411,
+        "column": 15
+      }
+    },
+    {
+      "name": "int (void *)",
+      "kind": "functionPointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 412,
+        "column": 15
+      }
+    },
+    {
+      "name": "stbi_uc*",
+      "kind": "pointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 384,
+        "column": 23
+      }
+    },
+    {
+      "name": "stbi_uc",
+      "kind": "typedef",
+      "sizeOf": 1,
+      "alignOf": 1,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 384,
+        "column": 23
+      }
+    },
+    {
+      "name": "unsigned char",
+      "kind": "primitive",
+      "sizeOf": 1,
+      "alignOf": 1,
+      "isSystem": true
+    },
+    {
+      "name": "float",
+      "kind": "primitive",
+      "sizeOf": 4,
+      "alignOf": 4,
+      "isSystem": true
+    },
+    {
+      "name": "float*",
+      "kind": "pointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "isSystem": true
+    },
+    {
+      "name": "stbi_us*",
+      "kind": "pointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 385,
+        "column": 24
+      }
+    },
+    {
+      "name": "stbi_us",
+      "kind": "typedef",
+      "sizeOf": 2,
+      "alignOf": 2,
+      "location": {
+        "fileName": "stb_image.h",
+        "filePath": "/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h",
+        "line": 385,
+        "column": 24
+      }
+    },
+    {
+      "name": "unsigned short",
+      "kind": "primitive",
+      "sizeOf": 2,
+      "alignOf": 2,
+      "isSystem": true
+    },
+    {
+      "name": "int**",
+      "kind": "pointer",
+      "sizeOf": 8,
+      "alignOf": 8,
+      "isSystem": true
+    }
+  ]
+}
