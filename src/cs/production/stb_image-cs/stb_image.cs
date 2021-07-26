@@ -21,152 +21,152 @@ public static unsafe partial class stb_image
 {
     private const string LibraryName = "stb_image";
 
-    // Function @ stb_image.h:532:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:532:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern int stbi_zlib_decode_noheader_buffer(CString obuffer, int olen, CString ibuffer, int ilen);
 
-    // Function @ stb_image.h:531:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:531:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern CString stbi_zlib_decode_noheader_malloc(CString buffer, int len, long* outlen);
 
-    // Function @ stb_image.h:529:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:529:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern int stbi_zlib_decode_buffer(CString obuffer, int olen, CString ibuffer, int ilen);
 
-    // Function @ stb_image.h:528:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:528:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern CString stbi_zlib_decode_malloc(CString buffer, int len, long* outlen);
 
-    // Function @ stb_image.h:527:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:527:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern CString stbi_zlib_decode_malloc_guesssize_headerflag(CString buffer, int len, int initial_size, long* outlen, int parse_header);
 
-    // Function @ stb_image.h:526:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:526:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern CString stbi_zlib_decode_malloc_guesssize(CString buffer, int len, int initial_size, long* outlen);
 
-    // Function @ stb_image.h:522:14 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:522:14 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_set_flip_vertically_on_load_thread(int flag_true_if_should_flip);
 
-    // Function @ stb_image.h:521:14 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:521:14 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_convert_iphone_png_to_rgb_thread(int flag_true_if_should_convert);
 
-    // Function @ stb_image.h:520:14 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:520:14 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_set_unpremultiply_on_load_thread(int flag_true_if_should_unpremultiply);
 
-    // Function @ stb_image.h:515:14 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:515:14 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_set_flip_vertically_on_load(int flag_true_if_should_flip);
 
-    // Function @ stb_image.h:512:14 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:512:14 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_convert_iphone_png_to_rgb(int flag_true_if_should_convert);
 
-    // Function @ stb_image.h:508:14 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:508:14 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_set_unpremultiply_on_load(int flag_true_if_should_unpremultiply);
 
-    // Function @ stb_image.h:494:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:494:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern int stbi_is_16_bit_from_callbacks(stbi_io_callbacks* clbk, void* user);
 
-    // Function @ stb_image.h:493:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:493:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern int stbi_is_16_bit_from_memory(byte* buffer, int len);
 
-    // Function @ stb_image.h:492:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:492:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern int stbi_info_from_callbacks(stbi_io_callbacks* clbk, void* user, long* x, long* y, long* comp);
 
-    // Function @ stb_image.h:491:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:491:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern int stbi_info_from_memory(byte* buffer, int len, long* x, long* y, long* comp);
 
-    // Function @ stb_image.h:488:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:488:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_image_free(void* retval_from_stbi_load);
 
-    // Function @ stb_image.h:485:21 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:485:21 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern CString stbi_failure_reason();
 
-    // Function @ stb_image.h:476:16 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:476:16 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern int stbi_is_hdr_from_memory(byte* buffer, int len);
 
-    // Function @ stb_image.h:475:16 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:475:16 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern int stbi_is_hdr_from_callbacks(stbi_io_callbacks* clbk, void* user);
 
-    // Function @ stb_image.h:471:19 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:471:19 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_ldr_to_hdr_scale(float scale);
 
-    // Function @ stb_image.h:470:19 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:470:19 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_ldr_to_hdr_gamma(float gamma);
 
-    // Function @ stb_image.h:466:19 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:466:19 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_hdr_to_ldr_scale(float scale);
 
-    // Function @ stb_image.h:465:19 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:465:19 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern void stbi_hdr_to_ldr_gamma(float gamma);
 
-    // Function @ stb_image.h:456:19 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:456:19 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern float* stbi_loadf_from_callbacks(stbi_io_callbacks* clbk, void* user, long* x, long* y, long* channels_in_file, int desired_channels);
 
-    // Function @ stb_image.h:455:19 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:455:19 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern float* stbi_loadf_from_memory(byte* buffer, int len, long* x, long* y, long* channels_in_file, int desired_channels);
 
-    // Function @ stb_image.h:443:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:443:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern ushort* stbi_load_16_from_callbacks(stbi_io_callbacks* clbk, void* user, long* x, long* y, long* channels_in_file, int desired_channels);
 
-    // Function @ stb_image.h:442:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:442:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern ushort* stbi_load_16_from_memory(byte* buffer, int len, long* x, long* y, long* channels_in_file, int desired_channels);
 
-    // Function @ stb_image.h:430:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:430:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern byte* stbi_load_gif_from_memory(byte* buffer, int len, long** delays, long* x, long* y, long* z, long* comp, int req_comp);
 
-    // Function @ stb_image.h:421:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:421:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern byte* stbi_load_from_callbacks(stbi_io_callbacks* clbk, void* user, long* x, long* y, long* channels_in_file, int desired_channels);
 
-    // Function @ stb_image.h:420:18 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Function @ stb_image.h:420:18 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [DllImport(LibraryName)]
     public static extern byte* stbi_load_from_memory(byte* buffer, int len, long* x, long* y, long* channels_in_file, int desired_channels);
 
-    // FunctionPointer @ stb_image.h:412:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // FunctionPointer @ stb_image.h:412:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [StructLayout(LayoutKind.Sequential)]
     public struct FnPtr_STB_IMAGE_VoidPtr_Int
     {
         public delegate* unmanaged<void*, int> Pointer;
     }
 
-    // FunctionPointer @ stb_image.h:411:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // FunctionPointer @ stb_image.h:411:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [StructLayout(LayoutKind.Sequential)]
     public struct FnPtr_STB_IMAGE_VoidPtr_Int_Void
     {
         public delegate* unmanaged<void*, int, void> Pointer;
     }
 
-    // FunctionPointer @ stb_image.h:410:15 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // FunctionPointer @ stb_image.h:410:15 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [StructLayout(LayoutKind.Sequential)]
     public struct FnPtr_STB_IMAGE_VoidPtr_CString_Int_Int
     {
         public delegate* unmanaged<void*, CString, int, int> Pointer;
     }
 
-    // Struct @ stb_image.h:413:3 (/Users/lstranks/Programming/stb-cs/ext/stb/stb_image.h)
+    // Struct @ stb_image.h:413:3 (C:\Users\lithi\Programming\stb-cs\ext\stb\stb_image.h)
     [StructLayout(LayoutKind.Explicit, Size = 24, Pack = 8)]
     public struct stbi_io_callbacks
     {

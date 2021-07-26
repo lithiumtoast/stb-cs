@@ -9,12 +9,12 @@ cmake -S $script_dir/src/c/stb_image -B $build_dir
 cmake --build $build_dir --config Release
 mkdir -p $lib_dir
 
-for filename in $build_dir/*.{a,dylib,so}; do
-    if [[ -f $filename ]]; then
-        filename_base="${filename##*/}"
-        filename_new="${lib_dir}${filename_base}"
-        mv $filename $filename_new
-        echo "Moved $filename to $filename_new"
+for filepath in $build_dir/*.{a,dylib,so}; do
+    if [[ -f $filepath ]]; then
+        filename="${filename##*/}"
+        filepath_new="${lib_dir}${filename}"
+        mv $filepath $filepath_new
+        echo "Moved $filepath to $filepath_new"
     fi
 done
 
