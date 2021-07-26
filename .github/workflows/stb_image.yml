@@ -40,7 +40,6 @@ jobs:
       with:
         default_author: user_info
         message: "Update bindings"
-        signoff: true
 
   version-job:
     name: "Get repository version"
