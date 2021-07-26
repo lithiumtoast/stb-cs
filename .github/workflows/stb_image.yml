@@ -106,8 +106,8 @@ jobs:
         path: ${{ github.workspace }}/lib/
 
   pack-job:
-    name: ".NET: build, test, & pack"
-    needs: [native-build-library]
+    name: "Pack"
+    needs: [native-library-job]
     runs-on: ubuntu-latest
     steps:
 
