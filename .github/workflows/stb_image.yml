@@ -1,0 +1,195 @@
+name: "Build test pack deploy"
+
+env:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_SDK_VERSION: 5.0.301
+  DOTNET_PROJECT_PATH: './src/cs/production/stb_image-cs/stb_image-cs.csproj'
+  MYGET_ACCESS_TOKEN: ${{ secrets.MYGET_ACCESS_TOKEN }}
+  MYGET_SOURCE_URL: 'https://www.myget.org/F/lithiumtoast/api/v3/index.json'
+
+on:
+  repository_dispatch:
+    types: [build-test-pack-deploy]
+
+jobs:
+
+  bindgen-job:
+    name: "Bindgen"
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: "Clone Git repository"
+      uses: actions/checkout@master
+      with:
+        submodules: true
+
+    - name: "Bindgen (Unix)"
+      if: matrix.os != 'windows-latest'
+      shell: bash
+      run: ./bindgen.sh
+
+    - name: "Bindgen (Windows)"
+      if: matrix.os == 'windows-latest'
+      shell: pwsh
+      run: .\bindgen.cmd
+
+    - name: "Add + commit + push (if necessary)"
+      uses: EndBug/add-and-commit@v7
+      with:
+        default_author: user_info
+
+  version-job:
+    name: "Get repository version"
+    needs: [bindgen-job]
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: "Clone Git repository"
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: "Git fetch all history for all tags and branches"
+      run: git fetch --prune --unshallow
+
+    - name: "Install GitVersion"
+      uses: gittools/actions/gitversion/setup@v0.9.6
+      env: 
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true # workaround for https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/ until the execute action is updated
+      with:
+        versionSpec: '5.x'
+          
+    - name: "Use GitVersion"
+      uses: gittools/actions/gitversion/execute@v0.9.6
+
+    - name: "Write version to disk"
+      run: echo "$(./.github/scripts/version_stb_image.sh)-$GITVERSION_NUGETPRERELEASETAGV2" >> version.txt
+
+    - name: "Upload version artifact"
+      uses: actions/upload-artifact@v2
+      with:
+        name: version
+        path: version.txt
+  
+  native-library-job:
+    name: "Build native library"
+    needs: [version-job]
+    runs-on: ${{ matrix.rid }}
+    strategy:
+      matrix:
+        os: [win-x64, osx-x64, linux-x64]
+    
+    steps:
+      
+    - name: "Clone Git repository"
+      uses: actions/checkout@master
+      with:
+        submodules: true
+
+    - name: "Build native libraries (Unix)"
+      if: matrix.rid != 'win-x64'
+      shell: bash
+      run: ./library.sh
+
+    - name: "Build native libraries (Windows)"
+      if: matrix.rid == 'win-x64'
+      shell: pwsh
+      run: .\library.cmd
+
+    - name: "Upload native libraries"
+      uses: actions/upload-artifact@v2
+      with:
+        name: native-libraries-${{ matrix.rid }}
+        path: ${{ github.workspace }}/lib/
+
+  pack-job:
+    name: ".NET: build, test, & pack"
+    needs: [native-build-library]
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: "Download repository version artifact"
+      uses: actions/download-artifact@v2
+      with:
+        name: version
+
+    - name: "Read version artifact"
+      shell: bash
+      run: |
+        echo "VERSION=$(cat version.txt)" >> $GITHUB_ENV
+
+    - name: "Print version artifact"
+      shell: bash
+      run: |
+        echo $VERSION
+
+    - name: "Clone Git repository"
+      uses: actions/checkout@master
+      with:
+        submodules: true
+
+    - name: "Install .NET"
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '${{ env.DOTNET_SDK_VERSION }}'
+
+    - name: "Clean solution"
+      run: dotnet clean --configuration Release && dotnet nuget locals all --clear
+
+    - name: "Download native libraries (win-x64)"
+      uses: actions/download-artifact@v2
+      with:
+        name: native-libraries-win-x64
+        path: ${{ github.workspace }}/lib
+
+    - name: "Download native libraries (osx-x64)"
+      uses: actions/download-artifact@v2
+      with:
+        name: native-libraries-osx-x64
+        path: ${{ github.workspace }}/lib
+
+    - name: "Download native libraries (linux-x64)"
+      uses: actions/download-artifact@v2
+      with:
+        name: native-libraries-linux-x64
+        path: ${{ github.workspace }}/lib
+
+    - name: "Print native libraries"
+      shell: bash
+      run: |
+        ls -a ${{ github.workspace }}/lib
+
+    - name: "Pack .NET project"
+      run: dotnet pack '${{ env.DOTNET_PROJECT_PATH }}' --nologo --output "./nuget-packages-packed" --verbosity minimal --configuration Release --no-build -p:PackageVersion='${{ env.VERSION }}'
+
+    - name: "Upload .NET built packages"
+      uses: actions/upload-artifact@v2
+      with:
+        name: nuget-packages-packed
+        path: './nuget-packages-packed/*/**'
+
+  deploy-job:
+    name: "Deploy"
+    needs: [pack-job]
+    steps:
+
+    - name: "Install .NET"
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '${{ env.DOTNET_SDK_VERSION }}'
+
+    - name: "Download NuGet Packages"
+      uses: actions/download-artifact@v1
+      with:
+        name: nuget-packages-packed
+        path: './nuget-packages-packed'
+
+    - name: "Upload Packages: MyGet (Unix)"
+      if: matrix.os != 'windows-latest'
+      run: dotnet nuget push "./**/*.nupkg" --source ${{ env.MYGET_SOURCE_URL }} --skip-duplicate --api-key ${{ env.MYGET_ACCESS_TOKEN }} 
+
+    - name: "Upload Packages: MyGet (Windows)"
+      if: matrix.os == 'windows-latest'
+      run: dotnet nuget push ".\**\*.nupkg" --source ${{ env.MYGET_SOURCE_URL }} --skip-duplicate --api-key ${{ env.MYGET_ACCESS_TOKEN }} 
+
