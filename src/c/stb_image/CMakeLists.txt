@@ -12,4 +12,5 @@ set(SOURCES "main.c")
 
 add_library(stb_image SHARED ${SOURCES})
 add_library(stb_image_s STATIC ${SOURCES})
+target_compile_definitions(stb_image_s PRIVATE -DSTB_IMAGE_STATIC=1)
 set_target_properties(stb_image_s PROPERTIES OUTPUT_NAME "stb_image")
