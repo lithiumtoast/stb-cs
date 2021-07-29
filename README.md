@@ -57,6 +57,6 @@ To learn how to use `stb`, check out the [Lazy Foo' Production](https://lazyfoo.
 
 ## License
 
-`SDL-cs` is licensed under the MIT License (`MIT`) - see the [LICENSE file](LICENSE) for details.
+`stb-cs` is licensed under the MIT License (`MIT`) - see the [LICENSE file](LICENSE) for details.
 
-`SDL` itself is public domain or otherwise dualed licensed under MIT (`MIT`) - see https://github.com/nothings/stb/blob/master/LICENSE for more details.
+`stb` itself is public domain or otherwise dualed licensed under MIT (`MIT`) - see https://github.com/nothings/stb/blob/master/LICENSE for more details.
