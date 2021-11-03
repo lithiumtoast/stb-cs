@@ -5,8 +5,6 @@ env:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
   DOTNET_SDK_VERSION: 5.0.301
   DOTNET_PROJECT_PATH: './src/cs/production/stb_image-cs/stb_image-cs.csproj'
-  MYGET_ACCESS_TOKEN: ${{ secrets.MYGET_ACCESS_TOKEN }}
-  MYGET_SOURCE_URL: 'https://www.myget.org/F/lithiumtoast/api/v3/index.json'
 
 on:
   push:
@@ -165,11 +163,4 @@ jobs:
       shell: bash
       run: |
         ls -a ${{ github.workspace }}/lib
-
-    - name: "Pack .NET project"
-      run: dotnet pack '${{ env.DOTNET_PROJECT_PATH }}' --nologo --output "./nuget-packages-packed" --verbosity minimal --configuration Release -p:PackageVersion='${{ env.VERSION }}'
-
-    - name: "Upload NuGet packages: MyGet"
-      if: matrix.os != 'windows-latest'
-      run: dotnet nuget push "./**/*.nupkg" --source ${{ env.MYGET_SOURCE_URL }} --skip-duplicate --api-key ${{ env.MYGET_ACCESS_TOKEN }} 
 

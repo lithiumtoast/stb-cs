@@ -14,8 +14,9 @@
 # C2CS
 /C2CS
 /C2CS.exe
-
-# C2CS artifacts
+/libclang.dll
+/libclang.dylib
+/libclang.so
 /ast/
 
 # macOS
